@@ -1,4 +1,5 @@
 import pandas as pd
+import random as rand
 
 def complete_fixed__creatinina__01(original_table, new_table, directory='default_values/'):
 
@@ -18,6 +19,18 @@ def complete_fixed__hb__01(original_table, new_table, directory='default_values/
             a = original_table['sexo'].iloc[i]        
             b = media_hb['hb'].iloc[int(a)]        
             new_table['hb'].iloc[i] = b
+
+def complete_unfixed__hb__01(original_table, new_table, directory='default_values/'):
+
+    media_hb = pd.read_csv(f'{directory}hb.csv')
+    nan_values = original_table['hb'].isna()
+    for i in range(original_table.shape[0]):
+        if nan_values[i]:        
+            a = original_table['sexo'].iloc[i]        
+            b = media_hb['hb'].iloc[int(a)] 
+            # Distribuci'on normal de la hemoglobina, con la media conocida, y desviaci'on 7
+            rand_hb = rand.gauss(b,7)
+            new_table['hb'].iloc[i] = rand_hb
 
 def complete_fixed__ckmb__01(original_table, new_table, directory='default_values/'):
 
