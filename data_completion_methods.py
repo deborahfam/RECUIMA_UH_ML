@@ -48,3 +48,17 @@ def complete_fixed__ckmb__01(original_table, new_table, directory='default_value
                     new_table['ckmb'].iloc[i] = mean_ckmb['WOMAN_mean_NSTEMI']
                 else:
                     new_table['ckmb'].iloc[i] = mean_ckmb['MEN_mean_NSTEMI']
+
+def complete_fixed__ckmb__02(original_table, new_table, directory='default_values/'):
+    '''
+    Rellenado del `ckmb` por `infarto_miocardio_agudo`, con las
+    medias de los valores limpios
+    '''
+    mean_ckmb = pd.read_csv(f'{directory}ckmb.csv')
+    nan_values = original_table['ckmb'].isna()
+    for i in range(original_table.shape[0]):
+        if nan_values[i]:  
+            if original_table['infarto_miocardio_agudo'].iloc[i] == 0:                
+                new_table['ckmb'].iloc[i] = 136.15893108298172
+            else:
+                new_table['ckmb'].iloc[i] = 112.1948051948052
