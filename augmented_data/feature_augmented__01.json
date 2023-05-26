@@ -1,0 +1,34 @@
+{
+    "edad": {
+        "method": "uniform",
+        "args": [3]
+    },
+    "peso": {
+        "method": "uniform",
+        "args": [5]
+    },
+    "frecuencia_cardiaca":{
+        "method": "uniform",
+        "args": [4]
+    },
+    "presion_arterial_sistolica": {
+        "method": "uniform",
+        "args": [10,60]
+    },
+    "presion_arterial_diastolica": {
+        "method": "uniform",
+        "args": [10,30]
+    },
+    "hb": {
+        "method": "uniform",
+        "args": [3,1]
+    },
+    "creatinina": {
+        "method": "uniform",
+        "args": [3]
+    },
+    "ckmb": {
+        "method": "uniform",
+        "args": [5,1]
+    }
+}
