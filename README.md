@@ -16,3 +16,6 @@ Luego se ejecuta la app de la siguiente forma;
 streamlit run app.py
 ```
 
+También la app esta hosteada de forma gratuita y se puede acceder por el siguiente enlace:
+
+https://deborahfam-recuima-uh-ml-app-pm8rgq.streamlit.app/
