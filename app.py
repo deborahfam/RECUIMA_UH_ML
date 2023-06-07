@@ -10,6 +10,8 @@ import matplotlib.pyplot as plt
 pipeline01_regresionLogistica = 'picture/pipeline01_regresionLogistica.jpg'
 pipeline02_modelacc = 'picture/pipeline2_modelacc.jpg'
 pipeline02_modelloss = 'picture/pipeline2_modelloss.jpg'
+nn_accurracy = 'picture/NNacc.png'
+nn_loss = 'picture/NNloss.png'
 
 
 def main():
@@ -273,8 +275,8 @@ def main():
     col1, col2 = st.columns(2)
 
     # Muestra las imágenes en sus respectivas columnas
-    col1.image(pipeline02_modelacc, caption='Eficacia del Modelo', use_column_width=True)
-    col2.image(pipeline02_modelloss, caption='Pérdida del Modelo', use_column_width=True)
+    col1.image(pipeline02_modelacc, caption='Eficacia del Modelo de Red Neuronal en los nuevos pipelines', use_column_width=True)
+    col2.image(pipeline02_modelloss, caption='Pérdida del Modelo de Red Neuronal', use_column_width=True)
     
     st.write("""
              Para los restantes pipeline se utilizan las mismas técnicas que para los anteriores pero con los dataset nuevos autocompletados
@@ -293,12 +295,12 @@ def main():
              3. **División de Datos**: Los datos se dividen luego en conjuntos de entrenamiento y prueba, con el 80% de los datos utilizados para el entrenamiento y el 20% utilizados para la prueba.
              4. **Entrenamiento y Evaluación del Modelo**: En los modelos utilizados se incluyen K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Regresión Logística, Gaussian Naive Bayes, Gradient Boosting Classification Tree basado en histograma y una Red Neuronal. Cada modelo se evalúa utilizando validación cruzada, puntuación de precisión, informe de clasificación y matriz de confusión. También se trazan curvas de aprendizaje para visualizar el rendimiento de los modelos.
              5. **Manejo de Datos Desbalanceados**: Para es desblance en los datos de cada clase a predecir (muertos y vivos) se realizan estrategias que suavizan esto. Esto se hace utilizando RandomOverSampler y BalancedBaggingClassifier de la biblioteca imbalanced-learn.
-             6. **Optimización del Modelo**: Se utiliza validación cruzada estratificada y Análisis de Componentes Principales (PCA) para optimizar los modelos. Esta función también calcula e imprime las puntuaciones AUC, Precisión y Recall para cada pliegue y sus promedios.
+             6. **Optimización del Modelo**: Se utiliza validación cruzada estratificada y Análisis de Componentes Principales (PCA) para optimizar los modelos. Esta función también calcula e imprime las puntuaciones AUC, Precisión y Recall (Recobrado) para cada pliegue y sus promedios.
              7. **Modelo de Aprendizaje Profundo**: Se incluye un modelo de aprendizaje profundo implementado con TensorFlow. El modelo es una red neuronal de avance con tres capas ocultas y una capa de abandono para prevenir el sobreajuste. El modelo se entrena utilizando el optimizador Adam y la pérdida de entropía cruzada binaria, y su rendimiento se evalúa utilizando precisión.
              
              Se obtuvieron los siguientes resultados en los diferentes modelos y tecnicas:
             
-             1. **KNN**: Este modelo tiene una precisión del 87%, pero su capacidad para predecir correctamente la clase 1(Afectación al estado vital, muerto) es muy baja (recall del 3%). Esto sugiere que el modelo tiene dificultades para identificar correctamente los casos positivos en el conjunto de datos.
+             1. **KNN**: Este modelo tiene una precisión del 87%, pero su capacidad para predecir correctamente la clase 1(Afectación al estado vital, fallecido) es muy baja (recall del 3%). Esto sugiere que el modelo tiene dificultades para identificar correctamente los casos positivos en el conjunto de datos.
              2. **KNN con random OverSampler**: Aunque la precisión general disminuye al 77%, el recall para la clase 1 mejora significativamente al 42%. Esto indica que el oversampling puede ayudar a mejorar la capacidad del modelo para identificar la clase minoritaria.
              3. **Versión con BalanceBaggingClassifier de KNN**: Este modelo tiene una precisión del 73% y un recall para la clase 1 del 76%. Aunque la precisión es más baja, el modelo es mejor para identificar la clase minoritaria.
              4. **SVM**: Este modelo tiene una precisión del 81% y un recall para la clase 1 del 76%. Este es un buen rendimiento, especialmente en la identificación de la clase minoritaria.
@@ -317,8 +319,15 @@ def main():
              
              El modelo de red neuronal parece tener un buen equilibrio entre precisión y recall, lo que sugiere que puede ser una buena opción si se busca un equilibrio entre la identificación de casos positivos y la minimización de falsos positivos.
              
-             Debido al contexto médico en el que se presenta el proyecto, los modelos que poseen un mejor recall o aquellos suficientemente equilibrados deberían priorizarse por encima de una mejor precesión. Esto es común en medicina ya que es peor dejar pasar pacientes con la enfermedad que erróneamente diagnosticar con la enfermedad a pacientes sanos.
+             Debido al contexto médico en el que se presenta el proyecto, los modelos que poseen un mejor recall o aquellos suficientemente equilibrados deberían priorizarse por encima de una mejor precisión. Esto es común en medicina ya que es peor dejar pasar pacientes con la enfermedad que erróneamente diagnosticar con la enfermedad a pacientes sanos. A pesar de haber otros con mejor recall no dista en demacía de estos valores manteniendo una gran precisión y por tanto es el modelo recomendado.
+             
+             En las siguientes graficas se puede observar el rendimiento final de este modelo.
              """)
+    col1, col2 = st.columns(2)
+
+    col1.image(nn_accurracy, use_column_width=True)
+    col2.image(nn_loss, use_column_width=True)
+    
     st.subheader("Bibliografia")
     st.markdown("[García-Ordás et al., 2023, 'Heart disease risk prediction using deep learning techniques with feature augmentation', Multimedia Tools and Applications](https://buleria.unileon.es/handle/10612/15890)")
     st.markdown("[Machine learning prediction of mortality in Acute Myocardial Infarction](https://pubmed.ncbi.nlm.nih.gov/37072766/)")
