@@ -284,6 +284,41 @@ def main():
              - pipeline 014, 024, 034: autocomplete data           
              
              """)
+    st.write("""
+             ### Pipeline final:
+             El pipeline final se presenta como una mezcla de estrategias utilizadas en otros. Aquí está un resumen de cada parte de este:
+
+             1. **Preprocesamiento de Datos**: Los datos que se utilizan son los explicados anteriormente que contienen 24 características además de otras 5 que se consideraron relevantes según la bibliografía.
+             2. **Escala de Características**: Las características continuas se escalan utilizando MinMaxScaler de sklearn, que transforma las características escalándolas a un rango dado, generalmente entre 0 y 1.
+             3. **División de Datos**: Los datos se dividen luego en conjuntos de entrenamiento y prueba, con el 80% de los datos utilizados para el entrenamiento y el 20% utilizados para la prueba.
+             4. **Entrenamiento y Evaluación del Modelo**: En los modelos utilizados se incluyen K-Nearest Neighbors (KNN), Support Vector Machine (SVM), Regresión Logística, Gaussian Naive Bayes, Gradient Boosting Classification Tree basado en histograma y una Red Neuronal. Cada modelo se evalúa utilizando validación cruzada, puntuación de precisión, informe de clasificación y matriz de confusión. También se trazan curvas de aprendizaje para visualizar el rendimiento de los modelos.
+             5. **Manejo de Datos Desbalanceados**: Para es desblance en los datos de cada clase a predecir (muertos y vivos) se realizan estrategias que suavizan esto. Esto se hace utilizando RandomOverSampler y BalancedBaggingClassifier de la biblioteca imbalanced-learn.
+             6. **Optimización del Modelo**: Se utiliza validación cruzada estratificada y Análisis de Componentes Principales (PCA) para optimizar los modelos. Esta función también calcula e imprime las puntuaciones AUC, Precisión y Recall para cada pliegue y sus promedios.
+             7. **Modelo de Aprendizaje Profundo**: Se incluye un modelo de aprendizaje profundo implementado con TensorFlow. El modelo es una red neuronal de avance con tres capas ocultas y una capa de abandono para prevenir el sobreajuste. El modelo se entrena utilizando el optimizador Adam y la pérdida de entropía cruzada binaria, y su rendimiento se evalúa utilizando precisión.
+             
+             Se obtuvieron los siguientes resultados en los diferentes modelos y tecnicas:
+            
+             1. **KNN**: Este modelo tiene una precisión del 87%, pero su capacidad para predecir correctamente la clase 1(Afectación al estado vital, muerto) es muy baja (recall del 3%). Esto sugiere que el modelo tiene dificultades para identificar correctamente los casos positivos en el conjunto de datos.
+             2. **KNN con random OverSampler**: Aunque la precisión general disminuye al 77%, el recall para la clase 1 mejora significativamente al 42%. Esto indica que el oversampling puede ayudar a mejorar la capacidad del modelo para identificar la clase minoritaria.
+             3. **Versión con BalanceBaggingClassifier de KNN**: Este modelo tiene una precisión del 73% y un recall para la clase 1 del 76%. Aunque la precisión es más baja, el modelo es mejor para identificar la clase minoritaria.
+             4. **SVM**: Este modelo tiene una precisión del 81% y un recall para la clase 1 del 76%. Este es un buen rendimiento, especialmente en la identificación de la clase minoritaria.
+             5. **Versión con BalanceBaggingClassifier de SVM**: Este modelo tiene una precisión del 80% y un recall para la clase 1 del 76%. Similar al modelo SVM, este modelo también tiene un buen rendimiento en la identificación de la clase minoritaria.
+             6. **Regresión logística**: Este modelo tiene una precisión del 73% y un recall para la clase 1 del 86%. Aunque la precisión es más baja, el modelo es muy bueno para identificar la clase minoritaria.
+             7. **Versión con BalanceBaggingClassifier de Regresión logística**: Este modelo tiene un rendimiento similar al modelo de regresión logística, con una precisión del 73% y un recall para la clase 1 del 86%.
+             8. **Gaussian Naive Bayes**: Este modelo tiene una precisión del 75% y un recall para la clase 1 del 89%. Aunque la precisión es más baja, el modelo es excelente para identificar la clase minoritaria.
+             9. **Versión con BalanceBaggingClassifier de Gaussian Naive Bayes**: Este modelo tiene una precisión del 87% y un recall para la clase 1 del 20%. Aunque la precisión es alta, el modelo tiene dificultades para identificar la clase minoritaria.
+             10. **Histogram-based Gradient Boosting Classification Tree**: Este modelo tiene una precisión promedio del 90% y un recall promedio para la clase 1 del 32%. Este modelo tiene un buen rendimiento general, pero tiene dificultades para identificar la clase minoritaria.
+             11. **Versión con BalanceBaggingClassifier de Regresión logística probada con Stratified K-Fold**: Las métricas en este caso presentan resultados un poco distintos una precisión promedio del 75% y un recall promedio para la clase 1 del 74%. Un rendimiento equilibrado en términos de precisión y recall.
+             12. **Red neuronal**: Este modelo tiene una precisión del 83% y un recall para la clase 1 del 80%. Este modelo tiene un buen rendimiento equilibrado en términos de precisión y recall.
+             
+             En resumen, los modelos que no utilizan técnicas de balanceo de clases tienden a tener una precisión general más alta, pero un recall más bajo para la clase minoritaria. Esto sugiere que estos modelos pueden ser más útiles si el objetivo es minimizar la cantidad de falsos positivos, incluso a costa de perder algunos casos positivos.
+             
+             Por otro lado, los modelos que utilizan técnicas de balanceo de clases como Random OverSampler y BalanceBaggingClassifier tienden a tener un mejor rendimiento en términos de recall para la clase minoritaria. Sin embargo, estos modelos tambiéntienden a tener una precisión general más baja. Esto sugiere que estos modelos pueden ser más útiles si el objetivo es identificar la mayor cantidad posible de casos positivos, incluso a costa de una mayor cantidad de falsos positivos.
+             
+             El modelo de red neuronal parece tener un buen equilibrio entre precisión y recall, lo que sugiere que puede ser una buena opción si se busca un equilibrio entre la identificación de casos positivos y la minimización de falsos positivos.
+             
+             Debido al contexto médico en el que se presenta el proyecto, los modelos que poseen un mejor recall o aquellos suficientemente equilibrados deberían priorizarse por encima de una mejor precesión. Esto es común en medicina ya que es peor dejar pasar pacientes con la enfermedad que erróneamente diagnosticar con la enfermedad a pacientes sanos.
+             """)
     st.subheader("Bibliografia")
     st.markdown("[García-Ordás et al., 2023, 'Heart disease risk prediction using deep learning techniques with feature augmentation', Multimedia Tools and Applications](https://buleria.unileon.es/handle/10612/15890)")
 
