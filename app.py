@@ -225,11 +225,11 @@ def main():
                 "edad": [3]
                 "peso":  [5]
                 "frecuencia_cardiaca":[4]
-                "presion_arterial_sistolica": [10,60]
-                "presion_arterial_diastolica": [10,30]
-                "hb":  [3,1]
+                "presion_arterial_sistolica": [10]
+                "presion_arterial_diastolica": [10]
+                "hb":  [3]
                 "creatinina": [3]
-                "ckmb":  [5,1]
+                "ckmb":  [5]
                 ```
         """)
     st.subheader("Modelo SNN")
