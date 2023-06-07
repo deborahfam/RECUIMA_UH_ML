@@ -21,6 +21,14 @@ def main():
         Se tienen características médicas tomadas de más de 1000 pacientes de 4 hospitales distintos distribuidos del país y se desea hacer un estudio exhaustivo en esas 
         características para conocer cuáles podrían ser un factor decisivo para conservar en cada etapa la salud del paciente. Se emplea para esto distintos métodos de aprendizaje
         automático como Redes Neuronales Convolucionales y se hace un estudio de los resultados estadísticos obtenidos.
+        
+        **Equipo #5**:
+        - Josué Rodríguez Ramírez C412[@josue_rdgz](https://t.me/josue_rdgz)
+        - Mauro José Bolado Vizoso C411[@D4rkFl4r3](https://t.me/D4rkFl4r3)
+        - Gabriel Hernández Rodríguez C411[@sour_ce](https://t.me/sour_ce)
+        - Lázaro Daniel González Martínez C411[@LachiD](https://t.me/LachiD)
+        - Deborah Famadas Rodríguez  C412[@dbyta](https://t.me/dbyta)
+        - Belsai Arango Hernández C411[@bel5599](https://t.me/bel5599)
         """)
 
     st.subheader("Descripción del Dataset")
