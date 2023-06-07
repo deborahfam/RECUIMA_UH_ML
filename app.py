@@ -19,7 +19,7 @@ def main():
     st.subheader("Aprendizaje Automático orientado a la detección de factores de riesgo para pacientes de infarto")
     st.markdown("""
         Se tienen características médicas tomadas de más de 1000 pacientes de 4 hospitales distintos distribuidos del país y se desea hacer un estudio exhaustivo en esas 
-        características para conocer cuáles podrían ser un factor decisivo para conservar en cada etapa la salud del paciente. Se emplea para esto distintos metodos de aprendizaje
+        características para conocer cuáles podrían ser un factor decisivo para conservar en cada etapa la salud del paciente. Se emplea para esto distintos métodos de aprendizaje
         automático como Redes Neuronales Convolucionales y se hace un estudio de los resultados estadísticos obtenidos.
         """)
 
@@ -104,7 +104,7 @@ def main():
 
     st.subheader("Completamiento de Datos")
     st.write("""
-            El dataset obtenido para el desarrollo del proyecto tenía en algunas características datos faltantes ya fuera porque la medicion de los datos no se hizo
+            El dataset obtenido para el desarrollo del proyecto tenía en algunas características datos faltantes ya fuera porque la medición de los datos no se hizo
             o porque el paciente no necesitaba esa medición. A raíz de eso se decidió utilizar métodos estadísticos para hacer completamiento de datos. 
             
             Se hizo dos tipos de modificaciones a los datos:
