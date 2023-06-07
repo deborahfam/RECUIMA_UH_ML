@@ -164,9 +164,7 @@ def main():
             - otros_diureticos
             - clopidogrel
             
-            La elección de las mismas es basada en las características de la siguiente documentación (documentacion).
-            En la misma se especifican características consideradas factores importantes a tener en cuenta, y luego que buscó un 
-            correspondiente a esa característia en nuestro dataset.
+            La elección de las mismas es basado en análisis de correlación y estudios en este cambo que las identifican como cracterísticas claves.
             """) 
             
     st.markdown("#### Estrategia de completado fijo:")
@@ -199,7 +197,8 @@ def main():
     st.write("""
             Los valores faltantes se llenan utilizando los valores promedios de los datos existentes sin anormalidades. 
             En este caso:
-            - `ckmb` se llenó en función del 'infarto_agudo_miocardio', con los valores promedios de los datos reales sin anormalidades. Para esto se utilizó una estrategia de eliminación de datos atípicos utilizando la desviación estándar.
+            - `ckmb` se llenó en función del 'infarto_agudo_miocardio', con los valores promedios de los datos reales sin anormalidades. Para esto se utilizó una estrategia de eliminación de datos atípicos utilizando el puntaje z (o z-score).
+            
             En este método, normalmente se consideran como atípicos los valores que caen fuera de 3 desviaciones estándar de la media. 
 
             La razón para elegir 3 desviaciones estándar se basa en la regla empírica (o regla 68-95-99.7) en estadísticas. Según esta regla, para una distribución normal, aproximadamente el 99.7% de los datos se encontrarán dentro de 3 desviaciones estándar de la media. Entonces, los valores que caen fuera de este rango son extremadamente raros bajo la suposición de normalidad y, por lo tanto, se pueden considerar valores atípicos.
