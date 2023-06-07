@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 # Establece la configuración de la página a wide (amplio)
 #st.set_page_config(layout="wide")
 
-#seccion de imagenes
+#sección de imagenes
 pipeline01_regresionLogistica = 'picture/pipeline01_regresionLogistica.jpg'
 pipeline02_modelacc = 'picture/pipeline2_modelacc.jpg'
 pipeline02_modelloss = 'picture/pipeline2_modelloss.jpg'
@@ -122,12 +122,12 @@ def main():
             - edad
             - sexo
             - peso
-            - hipertension_arterial
+            - hipertensión_arterial
             - diabetes_mellitus
             - tabaquismo
-            - frecuencia_cardiaca
-            - presion_arterial_sistolica
-            - presion_arterial_diastolica
+            - frecuencia_cardíaca
+            - presión_arterial_sintólica
+            - presión_arterial_diastolica
             - hb
             - creatinina
             - ckmb
