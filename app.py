@@ -321,6 +321,11 @@ def main():
              """)
     st.subheader("Bibliografia")
     st.markdown("[García-Ordás et al., 2023, 'Heart disease risk prediction using deep learning techniques with feature augmentation', Multimedia Tools and Applications](https://buleria.unileon.es/handle/10612/15890)")
+    st.markdown("[Machine learning prediction of mortality in Acute Myocardial Infarction](https://pubmed.ncbi.nlm.nih.gov/37072766/)")
+    st.markdown("[Prognostic Value of Machine-Learning-Based PRAISE Score for Ischemic and Bleeding Events in Patients With Acute Coronary Syndrome Undergoing Percutaneous Coronary Intervention](https://pubmed.ncbi.nlm.nih.gov/36974761/)")
+    st.markdown("[A Machine Learning-Based Applied Prediction Model for Identification of Acute Coronary Syndrome (ACS) Outcomes and Mortality in Patients during the Hospital Stay](https://pubmed.ncbi.nlm.nih.gov/36772390/)")
+    st.markdown("[Identification of Coronary Culprit Lesion in ST Elevation Myocardial Infarction by Using Deep Learning](https://pubmed.ncbi.nlm.nih.gov/36654772/)")
+    st.markdown("[Comparison of conventional scoring systems to machine learning models for the prediction of major adverse cardiovascular events in patients undergoing coronary computed tomography angiography](https://pubmed.ncbi.nlm.nih.gov/36386332/)")
 
 if __name__ == "__main__":
     main()
