@@ -326,6 +326,10 @@ def main():
     st.markdown("[A Machine Learning-Based Applied Prediction Model for Identification of Acute Coronary Syndrome (ACS) Outcomes and Mortality in Patients during the Hospital Stay](https://pubmed.ncbi.nlm.nih.gov/36772390/)")
     st.markdown("[Identification of Coronary Culprit Lesion in ST Elevation Myocardial Infarction by Using Deep Learning](https://pubmed.ncbi.nlm.nih.gov/36654772/)")
     st.markdown("[Comparison of conventional scoring systems to machine learning models for the prediction of major adverse cardiovascular events in patients undergoing coronary computed tomography angiography](https://pubmed.ncbi.nlm.nih.gov/36386332/)")
+    st.markdown("[Artificial intelligence and machine learning in cardiovascular computed tomography](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8554359/)")
+    st.markdown("[Cardiovascular Disease Prediction by Machine Learning Algorithms Based on Cytokines in Kazakhs of China](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8200454/)")
+    st.markdown("[ECG-based machine-learning algorithms for heartbeat classification](https://www.nature.com/articles/s41598-021-97118-5)")
+    st.markdown("[Risk prediction of cardiovascular disease using machine learning classifiers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9206502/)")
 
 if __name__ == "__main__":
     main()
