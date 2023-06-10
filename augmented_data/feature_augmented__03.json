@@ -1,0 +1,50 @@
+{
+    "edad": {
+        "method": "uniform",
+        "args": [3]
+    },
+    "peso": {
+        "method": "uniform",
+        "args": [5]
+    },
+    "frecuencia_cardiaca":{
+        "method": "uniform",
+        "args": [4]
+    },
+    "presion_arterial_sistolica": {
+        "method": "uniform",
+        "args": [10,60]
+    },
+    "presion_arterial_diastolica": {
+        "method": "uniform",
+        "args": [10,30]
+    },
+    "hb": {
+        "method": "uniform",
+        "args": [3,1]
+    },
+    "creatinina": {
+        "method": "uniform",
+        "args": [3]
+    },
+    "ckmb": {
+        "method": "uniform",
+        "args": [5,1]
+    },
+    "trigliceridos": {
+        "method": "uniform",
+        "args": [1.5,0,9]
+    },
+    "glicemia": {
+        "method": "uniform",
+        "args": [3,3.3,43]
+    },
+    "colesterol": {
+        "method": "uniform",
+        "args": [1,1.1,10]
+    },
+    "escala_grace": {
+        "method": "uniform",
+        "args": [5,34,190]
+    }
+}
