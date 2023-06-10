@@ -222,14 +222,18 @@ def main():
                 Una de las maneras de manejar este desequilibrio es mediante el "ampliado de data" o "data augmentation". En este proceso, se crean nuevos ejemplos de la clase minoritaria añadiendo un "ruido" a los ejemplos existentes. Esto puede ayudar a equilibrar los datos y a mejorar el rendimiento del modelo en la clase minoritaria.
                 
                 ```py
-                "edad": [3]
-                "peso":  [5]
-                "frecuencia_cardiaca":[4]
-                "presion_arterial_sistolica": [10]
-                "presion_arterial_diastolica": [10]
-                "hb":  [3]
-                "creatinina": [3]
-                "ckmb":  [5]
+                "edad": 3
+                "peso":  5
+                "frecuencia_cardiaca": 4
+                "presion_arterial_sistolica": 10
+                "presion_arterial_diastolica": 10
+                "hb": 3
+                "creatinina": 3
+                "ckmb": 5
+                "trigliceridos": 1.5
+                "glicemia": 3
+                "colesterol": 1
+                "escala_grace": 5
                 ```
         """)
     st.subheader("Modelo SNN")
@@ -306,12 +310,28 @@ def main():
              - pipeline 011, 021, 031: data_augmentation dataset 1 
              - pipeline 012, 022, 032: data_augmentation dataset 2 
              - pipeline 013, 023, 033: data_augmentation dataset 3 
-             - pipeline 014, 024, 034: autocomplete data           
-             
+             - pipeline 014, 024, 034: autocomplete data  (para este dataset se añadieron la siguientes caracteristicas el conjunto:
+                    - triglicéridos
+                    - glicemia
+                    - colesterol
+                    - escala grace
+                    - diálisis)      
+                    
              """)
     st.write("""
         ### Pipeline final:
-        El pipeline final se presenta como una mezcla de estrategias utilizadas en otros. Aquí está un resumen de cada parte de este:
+        El pipeline final se utiliza como dataset el argumented_data_version_2.0 el cual además de los 24 parametros que se habian especificado anteriormente
+        se annaden los siguientes parámetros:
+        
+        - tiempo_isquemia
+        - scacest
+        - insuficiencia_cardiaca_congestiva
+        - enfermedad_arterias_coronarias
+        - infarto_miocardio_agudo
+        
+        Añadir estos parámetros al dataset incrementa la eficacia del algoritmo como es notable en los resultados.
+        
+        El presentado como modelo final se resenta como una mezcla de estrategias utilizadas en otros. Aquí está un resumen de cada parte de este:
 
         1. **Preprocesamiento de Datos**: Los datos que se utilizan son los explicados anteriormente que contienen 24 características además de otras 5 que se consideraron relevantes según la bibliografía.
         2. **Escala de Características**: Las características continuas se escalan utilizando MinMaxScaler de sklearn, que transforma las características escalándolas a un rango dado, generalmente entre 0 y 1.
