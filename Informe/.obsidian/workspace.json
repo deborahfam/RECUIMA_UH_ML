@@ -1,0 +1,341 @@
+{
+  "main": {
+    "id": "72e17658976f3092",
+    "type": "split",
+    "children": [
+      {
+        "id": "584bbabb7e352a45",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c66a2657c37ce1e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Datasets/Feature Reduction.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c6f60d2044d5c768",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Informe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e000054f6c85624f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V2/Pipeline 2.1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "da051ec7ca58d60a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V1/Pipeline 1.2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "160ecc23708b8587",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V1/Pipeline 1.3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d0ca201b3cfb0411",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V1/Pipeline 1.4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2cabdb634ac5dc4d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V2/Pipeline 2.2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "44bb1215bd3f21ed",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V2/Pipeline 2.3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d4a3eac5443bc673",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V2/Pipeline 2.4.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a818bfc0c860f35d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V3/Pipeline 3.2.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a13c25ba17ca2719",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V3/Pipeline 3.3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4ef508cf2f2d007c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Pipelines/Pipelines V3/Pipeline 3.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "3b6321ee72319054",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Informe.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 12
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "39bdb37f6ab4fd06",
+    "type": "split",
+    "children": [
+      {
+        "id": "15401b0fb646b623",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f8f21fa5831610e",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "25973d15f2872bc3",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "7d72ccb6d4d5000b",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "43ad7db204dc4020",
+    "type": "split",
+    "children": [
+      {
+        "id": "9a236308d65e2db2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d1081b843a8a56c7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Informe.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "96a320c400b51ec7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Informe.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "41e503586e42ec40",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "7a2e8fa93d787980",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Informe.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir quick switcher": false,
+      "graph:Abrir vista de gráfico": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "3b6321ee72319054",
+  "lastOpenFiles": [
+    "Untitled.md",
+    "Pipelines/Pipelines V3",
+    "Pipelines/Pipelines V2",
+    "Pipelines/Pipelines V1",
+    "Informe.md",
+    "Pipelines/Pipelines V2/Pipeline 2.2.md",
+    "Pipelines/Pipelines V1/Pipeline 1.4.md",
+    "Pipelines/Pipelines V1/Pipeline 1.3.md",
+    "Pipelines/Pipelines V1/Pipeline 1.2.md",
+    "Pipelines/Pipeline S.md",
+    "Pipelines/Pipelines V2/Pipeline 2.3.md",
+    "Pipelines/Pipelines V3/Pipeline 3.4.md",
+    "Images/Pasted image 20230622132422.png",
+    "Images/Pasted image 20230622132419.png",
+    "Pipelines/Pipelines V1/Pipeline 1.md",
+    "Pipelines/Pipelines V2/Pipeline 2.1.md",
+    "Pipelines/Pipelines V1/Pipeline 1.1.md",
+    "Pipelines/Pipelines V3/Pipeline 3.3.md",
+    "Pipelines/Pipelines V3/Pipeline 3.1.md",
+    "Pipelines/Pipelines V3/Pipeline 3.2.md",
+    "Pipelines/Pipelines V2/Pipeline 2.4.md",
+    "Datasets/Improved Dataset.md",
+    "Datasets/Feature Reduction.md",
+    "Datasets/Final Dataset.md",
+    "Datasets/Original Dataset.md",
+    "Images/Pasted image 20230622122222.png",
+    "Images/Pasted image 20230622122157.png",
+    "Images/Pasted image 20230622122150.png",
+    "Images/Pasted image 20230622122116.png",
+    "Images/Pasted image 20230622122106.png",
+    "Images/Pasted image 20230622120727.png",
+    "Images/Pasted image 20230622120723.png",
+    "Images/Pasted image 20230622115242.png",
+    "Pipelines/Pipelines V3/Pipeline 3.md",
+    "Pipelines/Pipelines V2/Pipeline 2.md",
+    "portador.md",
+    "Images",
+    "ML_informe#1_plantilla (2).md",
+    "Articles/Automatic Prediction of Cardiovascular and Cerebrovascular Events Using Heart Rate Variability Analysis.pdf",
+    "Articles/Risk markers by sex for in hospital mortality in patients with acute coronary syndrome A machine learning approach.pdf",
+    "Articles/Detecting cardiac pathologies via machine learning on heart rate variability time series and related markers.pdf",
+    "Articles/Optimized Machine Learning Models to Predict In-Hospital Mortality for Patients with ST-Segment Elevation Myocardial Infarction.pdf",
+    "Articles",
+    "Datasets"
+  ]
+}
