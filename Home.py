@@ -34,7 +34,7 @@ def main():
         El uso de machine learning en la medicina, especialmente en el campo de las afecciones cardíacas, ha experimentado un gran avance en los últimos años. Gracias al progreso en las técnicas de aprendizaje automático y al aumento en la capacidad computacional, se han abierto nuevas oportunidades de investigación en la modelización cardiovascular. Sus aplicaciones en afecciones cardíacas abarcan desde la predicción y diagnóstico de enfermedades hasta la personalización de tratamientos y la identificación de factores de riesgo. Algunas de las técnicas más utilizadas en este campo incluyen redes neuronales artificiales (ANN), redes neuronales convolucionales (CNN), máquinas de vectores de soporte (SVM), árboles de decisión, bosques aleatorios y deep learning. El uso de este recurso en el diagnóstico y tratamiento de afecciones cardíacas permite a los médicos y profesionales de la salud tomar decisiones informadas y mejorar la atención al paciente.
        """)
 
-    st.markdown("### I.1 - Distintas estrategias usadas comunmente")
+    st.markdown("### I.1 - Distintas estrategias usadas comúnmente")
     st.markdown("##### I.1.1 - Redes neuronales artificiales (ANN)")
     st.markdown("""
         Las ANN son una de las técnicas más comunes utilizadas en la predicción de enfermedades cardíacas. Estos modelos pueden manejar datos no lineales y son capaces de aprender de los errores a través de un proceso de retropropagación.
