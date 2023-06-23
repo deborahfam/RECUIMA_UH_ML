@@ -3,4 +3,4 @@ pandas
 tensorflow
 matplotlib
 imblearn
-sklearn
+scikit-learn
