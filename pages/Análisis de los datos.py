@@ -140,7 +140,7 @@ Nuestro conjunto de datos contiene 78 características, sin embargo aunque los d
 
 ## Vector de Características 1
 
-Las primeras características que tuvimos en cuenta fueron las utilizadas en el artículo [**1**]. En este se utilizan varios técnicas de Machine Learning para predecir la mortalidad de pacientes ingresados en hospitales por problemas cardíacos. En este se obtienen los siguientes resultados muy buenos resultados finales.
+Las primeras características que tuvimos en cuenta fueron las utilizadas en el artículo [**1**]. En este se utilizan varios técnicas de Machine Learning para predecir la mortalidad de pacientes ingresados en hospitales por problemas cardíacos. En el cual se obtuvieron muy buenos resultados finales.
 
 Debido a esto es que decidimos utilizar las características seleccionadas en este artículo para comenzar nuestro estudio. Estas fueron:  
 
@@ -185,7 +185,7 @@ El segundo vector de características se hizo seleccionando 5 nuevas caracterís
 | Escala de Grace | 'escala_grace'  |
 | Dialisis        | 'dialisis'      |
 
-Para una descripción más detallada referirse a la sección Descripción de algunas caracterísitcas.
+Para una descripción más detallada referirse a la sección **Descripción de algunas caracterísitcas**
 
 
 ## Vector de Características 3
@@ -194,13 +194,13 @@ Y finalmente el último vector de características se hizo seleccionando otras 5
 
 | Característica            | Nombre en el conjunto de datos         |
 |:--------------------------|---------------------------------------:|
-| [PONNNNNNNNNNNEEEEEEER]   | 'tiempo_isquemia'                      |
+| Tiempo que transcurre luego de la isquemia        | 'tiempo_isquemia'                      |
 | Glicemia                  | 'scacest'                              |
 | Colesterol                | 'insuficiencia_cardiaca_congestiva'    |
 | Enfermedad Coronarias     | 'enfermedad_arterias_coronarias'       |
 | Infarto                   | 'infarto_miocardio_agudo'              |
 
-Para una descripción más detallada referirse a la sección Descripción de algunas características.
+Para una descripción más detallada referirse a la sección **Descripción de algunas caracterísitcas**.
 
 # Tratamiento de los Datos
 
